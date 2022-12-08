@@ -145,16 +145,19 @@ namespace TheGame
 
         private void TakeInput(object? sender, KeyEventArgs e)
         {
-
+            
             if (e.KeyCode == Keys.W && dir != Direction.Up && dir != Direction.Down)
                 dir = Direction.Up;
+
             else if (e.KeyCode == Keys.A && dir != Direction.Left && dir != Direction.Right)
                 dir = Direction.Left;
+
             else if (e.KeyCode == Keys.S && dir != Direction.Down && dir != Direction.Up)
                 dir = Direction.Down;
+            
             else if (e.KeyCode == Keys.D && dir != Direction.Right && dir != Direction.Left)
                 dir = Direction.Right;
-
+            
         }
 
 
